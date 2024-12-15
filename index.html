@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <!--link font Awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!--link local bootstrap.min.css -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <!--link my main css -->
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  
+
+  <!--nav-bar section -->
+  <nav class=" d-flex mybg2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="d-flex align-items-center" href="#">
+        <img src="./weather-images/logo@2x.png" alt="weather logo">
+        <div class="logo-type">
+          <p class="m-0">Weather</p>
+          <small class="sub-type">tagline goes here</small>
+        </div>
+      </a>
+      <ul class="d-flex">
+        <li>Home</li>
+        <li>News</li>
+        <li>Live Cameras</li>
+        <li>Photos</li>
+        <li>Contact</li>
+      </ul> 
+    </div>
+  </nav>
+
+
+  <!--main section-->
+  <section class="py-5 my-section">
+    <!--search bar section-->
+    <div class="container mb-5">
+      <div class="find-location d-flex justify-content-between mybg2">
+        <input class="input-data" type="text" placeholder="Find your location..." id="search">
+        <button type="submit" value="Find" id="submit">find</button>
+      </div>
+    </div>  
+
+    <!--Error alert section-->
+    <div id="errDiv" class="alert alert-danger text-center d-none">
+      <p>an error happend with connection to API server</p>
+    </div>
+
+
+    <!-- main section-->
+    <div class="container">
+      <div id="fetchedData" class="row">
+        <div class="col-md-4  mybg1">
+          <div class="d-flex justify-content-between p-1">
+          <!--data the fetched data-->
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!--footer section-->
+<footer class="p-5 mybg1">
+  <div class="container-fluid my-5 d-flex align-items-center">
+    <form class="find-location d-flex justify-content-between w-75 mybg2">
+      <input class="input-data" type="text" placeholder="Enter your Email to Subscribe..." id="search">
+      <button type="submit" id="submit">Subscribe</button>
+    </form>
+
+    <div>
+      <ul class="d-flex">
+        <li class="mx-1 border border-0 rounded-circle mybg2">
+          <i class="fa-brands fa-facebook-f"></i>
+        </li>
+        <li class="mx-1 border border-0 rounded-circle mybg2 ">
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li class="mx-1 border border-0 rounded-circle mybg2 ">
+          <i class="fa-brands fa-google-plus-g"></i>
+        </li>
+        <li class="mx-1 border border-0 rounded-circle mybg2 ">
+          <i class="fa-brands fa-pinterest"></i>
+        </li>
+      </ul>
+    </div>
+  </div>  
+  <p class="copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+</footer>
+  
+
+
+  <!--link local bootstrap.bundle.min.js-->
+  <script src="./bootstrap.bundle.min.js"></script>
+  <!--link my main jS-->
+  <script src="./main.js"></script>
+</body>
+</html>
